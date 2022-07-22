@@ -1,0 +1,516 @@
+/*
+project name: one pages 
+project date: 30-Mayis 2022
+project author: Hamit Mızrak
+project version: v.1
+*/
+/* ############################################################################ */
+/* common property */
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: 'Quicksand', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  background: #edeff1;
+  overflow: auto;
+}
+
+html {
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+}
+
+/* ############################################################################ */
+/* line-clamp */
+.line_clamp3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line_clamp4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line_clamp5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line_clamp6 {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line_clamp7 {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ############################################################################ */
+
+/*  nav */
+#navbar {
+  opacity: 0.9;
+}
+
+#logo_div {
+  padding: .375rem .6rem;
+  background-color: white;
+}
+
+#navbar_id ul > li > a {
+  font-size: 0.8rem;
+}
+
+#navbar_id ul > li > a > i {
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+  color: chartreuse;
+}
+
+#right_navbar > button,
+a {
+  font-size: 0.8rem;
+}
+#registerId input[type="text"]{
+  width: 100%;
+}
+#registerId .row{
+  margin-bottom: 1em;
+}
+#registerId form .col-md-1{
+  display: flex;
+  align-items: center;
+  
+}
+/* ############################################################################ */
+/* header */
+header {
+  background-image: url('picture/macbook.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -1;
+  height: 50rem;
+  padding-top: 15rem;
+}
+
+/* ##############################################################################*/
+/* main */
+
+/* section-1 */
+#ability {
+  padding: 6rem;
+   z-index: 0;
+  position: relative;
+}
+#ability::before{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('picture/software.jpg');
+  background-size: cover;
+  content: "";
+  opacity: 0.7;
+  z-index: -1;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+#ability i {
+  color: red;
+  font-size: 8rem;
+}
+
+#section_10 {
+  margin-bottom: 4rem;
+  margin-top:2rem;
+}
+
+#section_10  .icon_message  i{
+  font-size:6rem;
+}
+#section_10 .row .col-12{
+  margin-bottom: 1.5em;
+}
+
+/* #ability,#section_3,#section_2,#section_6{
+    margin-bottom:6rem;
+} */
+
+#ability .card {
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.8);
+}
+
+#ability .card:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/* section-2: blog */
+#section_2 {
+  position: relative;
+  padding: 6rem;
+}
+#section_2::before{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('picture/335448619.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  content: "";
+
+}
+#section_2 .card {
+  margin-bottom: 2rem;
+}
+
+#section_2 .card .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#section_2 .card > img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* section-3 */
+#section_3 {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 9rem;
+}
+#newspaper_id {
+  display: -webkit-box;
+  -webkit-line-clamp: 12;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-indent: 3rem;
+  /* column-count: 3;
+    column-rule:solid rgba(0,0,0,.6); */
+}
+
+/* back_to_top */
+#back_top {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: .5rem 1rem ;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+  border-radius: 0.4rem;
+  opacity: 0.7;
+  display: none;
+}
+
+#back_top:hover {
+  opacity: 0.9;
+}
+
+#section_6 {
+  padding: 8rem;
+  background: #313131;
+}
+
+#section_7 {
+  padding: 6rem;
+  margin-bottom: 1rem;
+}
+
+#section_7 > h4 {
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 40px;
+}
+
+#section_7 img {
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+
+}
+
+#section_7>img:hover{
+    opacity: 0.9;
+}
+
+/* ################################################################# */
+
+#contact_form > .row > div {
+  margin-bottom: 0.6rem;
+}
+
+#contact_form {
+  background: transparent;
+  padding: 1rem;
+}
+
+/* ################################################################# */
+
+/* footer */
+footer {
+  min-height: 20rem;
+  width: auto;
+  background-color: #3d3d3d;
+  color: white;
+}
+
+#address_id i {
+  margin-right: 0.6rem;
+  color: blueviolet;
+}
+
+#address_id a {
+  color: chartreuse;
+  font-size: 0.8rem;
+}
+
+#copy_right {
+  background: #2f3337;
+}
+
+.date {
+  text-align: center;
+  padding-bottom:2rem ;
+}
+#dateBtn{
+  background-color: red;
+  color: white;
+  transition: background-color 1s;
+}
+/*Media Query*/
+
+@media screen and (max-width: 1200px) {
+  html{
+    font-size: 14px;
+  }
+  .toTopText{
+    display: none;
+  }
+  #back_top{
+    padding: .25rem .25rem .25rem .75rem;
+  }
+  #section_2,#section_3,#section_4,#section_5,footer,#ability{
+    padding: 1rem;  
+  }
+  #ability .card{
+    margin-bottom: .5rem;
+  }
+  #header{
+    padding-top:4rem ;
+    padding-bottom:4rem;
+    height: auto;
+  }
+  #section_6,#section_7{
+    padding: 0 !important;
+  }
+  #section_7 img{
+    max-width: 90%;
+    object-fit: cover;
+  }
+  #section_10 p{
+    text-align: center;
+  }
+  #find{
+    margin-left: 2.3rem;
+  }
+}
+
+/*To Do Css*/
+
+#todoApp{
+  padding-bottom: 2em;
+}
+
+.todo_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-top: 32px;
+  background-color: rgb(182, 251, 239);
+}
+
+.todo_title {
+  font-size: 2.5rem;
+}
+
+.todo_div {
+  display: flex;
+  margin-top: 16px;
+}
+
+.todo_input {
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  outline: none;
+}
+
+.todo_btn {
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  outline: none;
+  background-color: aliceblue;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.todo_btn:hover {
+  background-color: rgb(208, 225, 240);
+}
+
+.todo_container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-top: 16px;
+  background-color: rgb(182, 251, 239);
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgb(182, 251, 239);
+}
+
+.todo:last-child { 
+  border: none;
+}
+
+.todo_left {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.todo_editInput {
+  position: absolute;
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  outline: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.todo_text, .todo_edit {
+  margin-left: 8px;
+}
+
+.todo_cb:checked ~ .todo_text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo_right {
+  position: relative;
+}
+
+.todo_delete {
+  background-color: tomato;
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  color: white;
+  border-radius: 4px 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.todo_delete:hover {
+  background-color: rgb(255, 117, 93);
+}
+
+.todo_edit {
+  background-color: rgb(61, 224, 116);
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  color: white;
+  border-radius: 4px 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.todo_edit:hover {
+  background-color: rgb(53, 192, 99);
+}
+
+.todo_save {
+  position: absolute;
+  right: 0;
+  background-color: rgb(61, 164, 224);
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  color: white;
+  border-radius: 4px 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.todo_save:hover {
+  background-color: rgb(65, 147, 194);
+}
+
+.todo.-edited .todo_left *, .todo.-edited .todo_right * {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.todo.-edited .todo_left .todo_editInput, .todo.-edited .todo_right .todo_save {
+  opacity: 1;
+  pointer-events: all;
+}
